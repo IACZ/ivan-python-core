@@ -1,0 +1,14 @@
+Object oriented programming
+- Mirror real world into software world
+
+1. Real world actor -> data in the memory
+  - students, professors, librarian, book, author,....
+  - object
+  - str, int, float, bool -> objects
+  - class : objects are created from a class. 1 to n objects.
+  a class gives a data type to an object
+  - str, int, float, bool,..... -> built in classes
+2. Real world actor characteristics -> Object attributes
+  - Every object can have its own set of attributes
+  - all the attributes are grouped in the object
+3. Real world actor actions -> method calls on the object
