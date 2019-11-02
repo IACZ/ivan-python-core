@@ -46,7 +46,8 @@ from com.abc.lib.series import get_even_series, get_fibo_series as fibo
 from math import factorial # built in math module
 
 while True:
-  print('1. Fibo series\n2. Even series\n3. Even or Odd\n4. Factorial\n5. Exit')
+  # print('1. Fibo series\n2. Even series\n3. Even or Odd\n4. Factorial\n5. Exit')
+  print('1. Fibo series', '2. Even series', '3. Even or Odd', '4. Factorial', '5. Exit', sep='\n')
   choice = int(input('Please enter ur choice: ')) # '3' -> 3
 
   if choice == 5:

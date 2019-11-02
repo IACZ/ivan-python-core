@@ -1,0 +1,30 @@
+Buckets
+
+0 - 
+
+
+1 - Student(5)
+
+
+
+2 - Student(10) - Student(14)
+
+
+3 - Student(23)
+...
+
+
+
+9
+
+Hash function - key % 4
+
+data (key, value)
+- 10, Student(10) : 10 % 4 : 2
+- 5, Student(5) : 5 % 4 : 1
+- 23, Student(23) : 23 % 4 : 3
+- 14, Student(14): 14 % 4 : 2
+
+roll : 5 : 5 % 4 : 1
+    : 23 : 23 % 4 : 3
+    ; 14 : 14 % 4 : 2
