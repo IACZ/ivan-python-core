@@ -24,3 +24,13 @@ def get_even_series(n):
   for i in range(0, n + 1, 2):
     result += str(i) + '\t'
   return result
+
+
+# print(__name__)
+# 1. When the module is run directly = '__main__'
+# 2. When the module is not run directly (imported) = 'com.abc.lib.series'
+
+if __name__ == '__main__':
+  n = int(input('Enter n: '))
+  print(get_fibo_series(n))
+  print(get_even_series(n))
