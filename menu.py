@@ -44,6 +44,21 @@ import com.abc.lib.math as m # user defined math module
 from com.abc.lib.series import get_even_series, get_fibo_series as fibo
 
 from math import factorial # built in math module
+from threading import Thread
+from datetime import datetime
+from time import sleep
+
+class DatetimeBroadcaster(Thread):
+  def run(self):
+    while True:
+      print(datetime.now())
+      # pause execution of current thread for the next min 10 seconds
+      sleep(10)
+
+udt = DatetimeBroadcaster()
+udt.daemon = True # do this before starting the thread (putting it for scheduling)
+
+udt.start()
 
 while True:
   # print('1. Fibo series\n2. Even series\n3. Even or Odd\n4. Factorial\n5. Exit')
@@ -70,3 +85,8 @@ while True:
   else:
     # factorial
     print(factorial(n))
+
+# Daemon threads
+# main thread - non daemon thread
+# any thread forked from a non daemon thread - becomes a non daemon thread
+# python will continue the process if there is minimum one non daemon thread actively running
