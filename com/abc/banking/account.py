@@ -8,5 +8,5 @@ class Account:
 
   def withdraw(self, amt):
     self.acc_balance -= amt
-    sleep(7)
+    sleep(4) # some more time for the execution of this method
     return self.acc_balance
