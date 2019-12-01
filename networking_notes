@@ -1,0 +1,18 @@
+TCP/IP
+- Connection oriented protocol
+    - 3 way handshake
+- Reliable
+
+
+UDP
+- Connection less protocol
+- Unreliable
+
+socket
+    - object using which we can listen for connections
+    - object using which we can even make connections
+    - family
+        - AF_INET : socket understand IPv4 addresses
+    - type
+        - SOCK_STREAM : socket understands TCP/IP
+        - SOCK_DGRAM : socket understands UDP
