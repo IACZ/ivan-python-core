@@ -14,11 +14,12 @@ def copying_job(path, destination):
 path = '/Users/mehulchopra/Documents/personal/training/ivan-python-core/math_ops.py'
 destination = '/Users/mehulchopra/Desktop'
 
-udp = Process(target=copying_job, args=(path, destination))
-udp.start()
+if __name__=='__main__':
+  udp = Process(target=copying_job, args=(path, destination))
+  udp.start()
 
-# CPU operation
-n = 1000
-print(get_fibo_series(n))
+  # CPU operation
+  n = 1000
+  print(get_fibo_series(n))
 
-udp.join() # ensures that the subprocess is destroyed once its work is done and is not lingering
+  udp.join() # ensures that the subprocess is destroyed once its work is done and is not lingering
